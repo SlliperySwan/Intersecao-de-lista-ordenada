@@ -1,6 +1,5 @@
 import time
 import copy
-from random import randint as rand
 
 def busca_bin(Lista, i, f, num):
     if i > f:
@@ -31,6 +30,7 @@ def intersecao2(A, inicioA, fimA, B, inicioB, fimB):
         return v1 + index + v2 
 
 def intersecao(A, B):
+    beta = copy.deepcopy(B)
     return intersecao2(A, 0, len(A)- 1, B, 0, len(B)-1)
 
 
