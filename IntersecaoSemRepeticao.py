@@ -31,7 +31,7 @@ def intersecao2(A, inicioA, fimA, B, inicioB, fimB):
 
 def intersecao(A, B):
     beta = copy.deepcopy(B)
-    return intersecao2(A, 0, len(A)- 1, B, 0, len(B)-1)
+    return intersecao2(A, 0, len(A)- 1, beta, 0, len(beta)-1)
 
 
 
