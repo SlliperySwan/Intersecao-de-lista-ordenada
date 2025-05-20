@@ -25,4 +25,9 @@ def intersecao2(A, inicioA, fimA, B, inicioB, fimB):
         return arrayMenor + termoComum + arrayMaior
 
 def intersecao(A, B):
-    return intersecao2(A, 0, len(A)- 1, B, 0, len(B)-1)
+    tamA = len(A)
+    tamB = len(B)
+    if tamB >= tamA:
+        return intersecao2(A, 0, tamA - 1, B, 0, tamB -1)
+    else:
+        return intersecao2(B, 0, tamB - 1, A, 0, tamA -1)
