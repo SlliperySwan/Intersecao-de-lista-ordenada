@@ -18,16 +18,11 @@ def intersecao2(A, inicioA, fimA, B, inicioB, fimB):
         arrayMenor = intersecao2(A, inicioA, meio - 1, B, inicioB, fimB)
         arrayMaior = intersecao2(A, meio+1, fimA, B, inicioB, fimB)
         termoComum = busca_bin(B, 0, len(B)-1, A[meio])
-        duplicataMenor = len(arrayMenor) != 0 and termoComum[0] <= arrayMenor[-1]
-        duplicataMaior = len(arrayMaior) != 0 and termoComum[0] >= arrayMaior[0]
-        if duplicataMenor or duplicataMaior:
+        existeNoMenor = len(arrayMenor) != 0 and termoComum[0] <= arrayMenor[-1]
+        existeNoMaior = len(arrayMaior) != 0 and termoComum[0] >= arrayMaior[0]
+        if existeNoMenor or existeNoMaior:
             termoComum = []
         return arrayMenor + termoComum + arrayMaior
 
 def intersecao(A, B):
     return intersecao2(A, 0, len(A)- 1, B, 0, len(B)-1)
-
-
-
-
-
