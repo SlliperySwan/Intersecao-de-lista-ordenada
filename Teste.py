@@ -12,7 +12,7 @@ inicio_r = time.time()
 resultado_r = intersecaoR(array1, array2)
 fim_r = time.time()
 
-print("Interseção COM repetição 100 elementos")
+print("Interseção COM repetição 10 elementos")
 print("Array 1:", array1)
 print("Array 2:", array2)
 print("Resultado:", resultado_r)
