@@ -1,5 +1,3 @@
-import time
-
 def busca_bin(Lista, i, f, num):
     if i > f:
         return -1
