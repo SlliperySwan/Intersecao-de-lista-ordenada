@@ -102,7 +102,7 @@ print("Resultado:", resultado_r2)
 print("Tempo: {:.6f} segundos".format(fim_sr - inicio_sr))
 print("================================================================================")
 
-array3 = sorted(random.sample(range(1, 10001), 10000))
+array3 = sorted(random.sample(range(1, 100000), 10000))
 array4 = sorted(random.sample(range(1, 10001), 10000))
 
 inicio_sr = time.time()
@@ -116,8 +116,8 @@ print("Resultado:", resultado_r2)
 print("Tempo: {:.6f} segundos".format(fim_sr - inicio_sr))
 print("================================================================================")
 
-array3 = sorted(random.sample(range(1, 10001), 100000))
-array4 = sorted(random.sample(range(1, 10001), 100000))
+array3 = sorted(random.sample(range(1, 100001), 100000))
+array4 = sorted(random.sample(range(1, 100001), 100000))
 
 inicio_sr = time.time()
 resultado_r2 = intersecao(array3, array4)
@@ -130,8 +130,8 @@ print("Resultado:", resultado_r2)
 print("Tempo: {:.6f} segundos".format(fim_sr - inicio_sr))
 print("================================================================================")
 
-array3 = sorted(random.sample(range(1, 10001), 1000000000))
-array4 = sorted(random.sample(range(1, 10001), 1000000000))
+array3 = sorted(random.sample(range(1, 10000001), 1_000_000))
+array4 = sorted(random.sample(range(1, 10000001), 1_000_000))
 
 inicio_sr = time.time()
 resultado_r2 = intersecao(array3, array4)
