@@ -27,3 +27,4 @@ def intersecao(A, B):
         return intersecao2(A, 0, tamA - 1, B)
     else:
         return intersecao2(B, 0, tamB - 1, A)
+    
